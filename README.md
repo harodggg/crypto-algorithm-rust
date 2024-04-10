@@ -7,3 +7,7 @@
 # ed25519
 
 # sr25519
+
+# zk-snark
+
+# zk-stark
