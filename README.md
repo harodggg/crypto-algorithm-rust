@@ -2,15 +2,13 @@
 
 # rsa
 
-# blake2
+# hash algorithm
+1. blake2
+2. sha-3
 
-# ed25519
-
-# sr25519
-
-# zk-snark
-
-# zk-stark
+# zk algorithm
+1. zk-snark
+2. zk-stark
 
 # ecc (elliptic curve cryptography )
 1. secp256k1
@@ -23,3 +21,11 @@
 4. verify
 5. recover
 6. recoverID
+
+# eddsa (elliptic digital)
+1. ed25519
+2. sr25519
+
+
+
+
