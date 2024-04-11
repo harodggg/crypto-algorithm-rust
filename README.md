@@ -26,6 +26,8 @@
 1. ed25519
 2. sr25519
 
+# bls signture and multisignture
+
 
 
 
