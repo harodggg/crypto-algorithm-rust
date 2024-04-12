@@ -3,6 +3,12 @@ struct state256 {
 
 }
 
+trait blake256_compress { 
+    fn compress() { 
+
+    }
+}
+
 fn main() {
     println!("Hello, world!");
 }

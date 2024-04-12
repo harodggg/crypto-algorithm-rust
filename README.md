@@ -32,10 +32,14 @@
 # cryptography
 1. stream cipher
     - rc4
+    - chacha20
 2. block cipher
     - des
     - ase
 3. Public-key cryptography / Asymmetric cryptography
+    - edcsa
+    - eddsa
+    - blssa
 
 # Serialization
 1. base58
