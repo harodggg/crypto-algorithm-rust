@@ -7,3 +7,5 @@ image = f(preimage)
 
 # one-way hash function
 the output is called message digest or fingerprint
+
+# what is the r，t, s meaning?
