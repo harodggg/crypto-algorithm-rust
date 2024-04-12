@@ -37,6 +37,12 @@
     - ase
 3. Public-key cryptography / Asymmetric cryptography
 
-
+# Serialization
+1. base58
+2. base64
+3. bcs
+4. ss58
+5. rlp
+6. scale
 
 
