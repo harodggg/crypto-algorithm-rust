@@ -32,7 +32,7 @@
 # cryptography
 1. stream cipher
     - rc4
-    - chacha20
+    - chacha20(salas20)
 2. block cipher
     - des
     - ase
