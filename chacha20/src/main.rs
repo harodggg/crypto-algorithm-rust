@@ -20,6 +20,8 @@ impl ChachaBuf {
                     input[i * 4 + 3],
                 ]);
             }
+        } else { 
+            panic!("Is not ChachaBuf:C");
         }
         ChachaBuf::U(output)
     }  
