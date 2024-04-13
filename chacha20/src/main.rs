@@ -1,3 +1,7 @@
+use rand::Rng;
+
+
+const CONSTANTS: &[u8] = "expand 32-byte k".as_bytes();
 #[derive(Debug)]
 enum ChachaBuf{
     U([u32;16]),   
@@ -20,5 +24,22 @@ trait Encoder {
 }
 fn main() {
     let chachabuf_test: ChachaBuf = ChachaBuf::U([0;16]);
-    println!("Hello, world!{:?}",chachabuf_test);
+    let mut rng = rand::thread_rng();
+    let mut nonce = [0u8;16];
+    let mut key = [0u8;32];
+    rng.fill(&mut nonce);
+    rng.fill(&mut key);
+    
+    println!("Hello, world!{:?}",key.len());
+}
+
+
+#[cfg(test)] 
+mod tests { 
+    use super::*;
+
+    #[test]
+    fn one_test() { 
+        assert_eq!("aa","aa")
+    }
 }

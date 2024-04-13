@@ -49,4 +49,7 @@
 5. rlp
 6. scale
 
+# one-time authenticator
+1. ploy1305
+
 

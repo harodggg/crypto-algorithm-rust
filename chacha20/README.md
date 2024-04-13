@@ -57,3 +57,5 @@ c += d; b ^= c; b <<<= 7;
 12. 64 bytes ^ text = 64 key
 13. The data is divided into several 64bytes blocks. 64 bytes_block ^ 64 bytes key_n . block counter + 1  after processing every block
 14. key_init  16 bytes contants = "expand 32-byte k"
+15. add_rotate_xor
+16. 
