@@ -1,11 +1,14 @@
 # Implementation process
 1. KEY_INIT,KEY_BYTES, 64 bytes = 16 * 4 bytes = 16 * 32 bit
-2. KEY_INIT[u8;64] = {
+2. 
+```
+KEY_INIT[u8;64] = {
     KEY_INIT[0] ~ KEY_INIT[15]: constant,16 bytes,
     KEY_INIT[16] ~ KEY_INIT[47]: key,47 -15=32bytes, 
     KEY_INIT[48] ~ KEY_INIT[51]: block counter, 4bytes,
     KEY_INIT[52] ~ KEY_INIT[63]: nonce, 12 btyes
 }
+```
 ```
 cccccccc  cccccccc  cccccccc  cccccccc
 kkkkkkkk  kkkkkkkk  kkkkkkkk  kkkkkkkk
