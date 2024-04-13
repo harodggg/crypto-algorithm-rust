@@ -9,12 +9,12 @@ trait Round {
         unimplemented!();
     }
 }
-trait Decode { 
+trait Decoder { 
     fn decode() { 
     }
 }
 
-trait Encode { 
+trait Encoder { 
     fn encode() { 
     }
 }
