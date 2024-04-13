@@ -27,10 +27,10 @@ c += d; b ^= c; b <<<= 7;
 ```
 7. column operations
 | :--: | :--: | :--: | :--: |
-0 1 2 3 
-4 5 6 7 
-8 9 10 11 
-12 13 14 15 
+| 0    |  1   | 2    | 3    |
+| 4    |  5   | 6    | 7    |
+| 8    |  9   | 10   | 11   |
+| 12   | 13   | 14   | 15   |
 
 the first quarter round: 0 4 8 12 
 the second quarter round: 1 5 6 7 
@@ -39,10 +39,10 @@ the fourth quarter round: 3 7 11 15
 
 8. diagonal operations
 | :--: | :--: | :--: | :--: |
-0 1 2 3 
-4 5 6 7 
-8 9 10 11 
-12 13 14 15 
+| 0    |  1   | 2    | 3    |
+| 4    |  5   | 6    | 7    |
+| 8    |  9   | 10   | 11   |
+| 12   | 13   | 14   | 15   |
 
 the first quarter round: 0 5 10 15 
 the second quarter round: 1 6 11 12
