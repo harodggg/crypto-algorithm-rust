@@ -21,17 +21,35 @@ impl ChachaBuf {
                 ]);
             }
         } else { 
-            panic!("Is not ChachaBuf:C");
+            panic!("Is not ChachaBuf::C");
         }
         ChachaBuf::U(output)
     }  
 }
 
 trait Round { 
-    fn quarter_round(a: [u8;4],b: [u8;4],c: [u8;4],d: [u8;4]){ 
-        unimplemented!();
+    fn quarter_round(mut a: u32,mut b: u32,mut c: u32,mut d: u32) -> [u32;4] { 
+        a += b;
+        d ^= a;
+        d = d.rotate_left(16);
+
+
+        c += d;
+        b ^= c;
+        b = b.rotate_left(12);
+
+        a += b;
+        d ^= a;
+        d = d.rotate_left(8);
+
+        c += d;
+        b ^= c;
+        b = b.rotate_left(7);
+
+        [a,b,c,d]
     }
 }
+
 trait Decoder { 
     fn decode() { 
     }
@@ -54,7 +72,7 @@ fn main() {
     let key_init: ChachaBuf = ChachaBuf::C(
        [CONSTANTS.to_vec(),key.to_vec(),block_counter.to_vec(),nonce.to_vec()].concat().try_into().expect("key is not 64 bytes")
     ); 
-    println!("Hello, world!{:?}",ChachaBuf::to_u(key_init));
+    println!("Hello, world!{:?}",key_init);
 }
 
 
