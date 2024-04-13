@@ -26,6 +26,7 @@ c += b; d ^= a; d <<<= 8;
 c += d; b ^= c; b <<<= 7;
 ```
 7. column operations
+
 | 0    | 1    | 2    | 3    |
 | :--: | :--: | :--: | :--: |
 | 4    |  5   | 6    | 7    |
@@ -38,6 +39,7 @@ the third quarter round: 2 6 10 14
 the fourth quarter round: 3 7 11 15
 
 8. diagonal operations
+
 | 0    | 1    | 2    | 3    |
 | :--: | :--: | :--: | :--: |
 | 4    |  5   | 6    | 7    |
