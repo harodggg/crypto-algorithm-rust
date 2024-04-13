@@ -9,6 +9,15 @@ trait Round {
         unimplemented!();
     }
 }
+trait Decode { 
+    fn decode() { 
+    }
+}
+
+trait Encode { 
+    fn encode() { 
+    }
+}
 fn main() {
     let chachabuf_test: ChachaBuf = ChachaBuf::U([0;16]);
     println!("Hello, world!{:?}",chachabuf_test);
