@@ -26,17 +26,16 @@ c += b; d ^= a; d <<<= 8;
 c += d; b ^= c; b <<<= 7;
 ```
 7. column operations
-
 | 0    | 1    | 2    | 3    |
 | :--: | :--: | :--: | :--: |
 | 4    |  5   | 6    | 7    |
 | 8    |  9   | 10   | 11   |
 | 12   | 13   | 14   | 15   |
 
-the first quarter round: 0 4 8 12 
-the second quarter round: 1 5 6 7 
-the third quarter round: 2 6 10 14
-the fourth quarter round: 3 7 11 15
+the first quarter round: 0 4 8 12  <br />
+the second quarter round: 1 5 6 7  <br />
+the third quarter round: 2 6 10 14 <br />
+the fourth quarter round: 3 7 11 15 <br />
 
 8. diagonal operations
 
@@ -46,10 +45,10 @@ the fourth quarter round: 3 7 11 15
 | 8    |  9   | 10   | 11   |
 | 12   | 13   | 14   | 15   |
 
-the first quarter round: 0 5 10 15 
-the second quarter round: 1 6 11 12
-the third quarter round: 2 7 8 13
-the fourth quarter round: 3 4 9 14
+the first quarter round: 0 5 10 15 <br />
+the second quarter round: 1 6 11 12 <br />
+the third quarter round: 2 7 8 13 <br />
+the fourth quarter round: 3 4 9 14 <br />
 
 9. chacha 20 = 10 * (cloum operations + diagonal operations) = 10 * ( 4 * cloum quarter round + 4 * diagonal quarter round)
 10. matrix M, 20 ROUND M, get new matrix S. M + S =new matrix W
